@@ -1,0 +1,93 @@
+/* ბრაუზერის ნაგულისხმევი მინდვრების მოცილება */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* მთავარი კონტეინერი */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    width: 90%;
+    max-width: 1100px;
+    min-height: 80vh;
+
+    margin: 10vh auto;
+}
+
+/* საერთო სტილები ყველა ბლოკისთვის */
+.card {
+    flex: 1;
+    padding: 40px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* სათაური */
+.card h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* ტექსტი */
+.card p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* პირველი ბლოკი - Sedans */
+.sedan-card {
+    background-color: hsl(31, 77%, 52%);
+}
+
+/* მეორე ბლოკი - SUVs */
+.suv-card {
+    background-color: hsl(184, 100%, 22%);
+}
+
+/* მესამე ბლოკი - Luxury */
+.luxury-card {
+    background-color: hsl(179, 100%, 13%);
+}
+
+/* ღილაკი */
+.btn {
+    display: inline-block;
+
+    background-color: white;
+    color: #333;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 12px 24px;
+    border-radius: 25px;
+
+    margin-top: 20px;
+    width: fit-content;
+}
+
+/* აიკონის წრე */
+.icon-circle {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    background-color: transparent;
+}
+/* ღილაკზე მაუსის მიტანისას */
+.btn:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
